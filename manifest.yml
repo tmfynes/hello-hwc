@@ -1,0 +1,13 @@
+---
+applications:
+  - name: hello-hwc
+    memory: 512M
+    disk_quota: 1G
+    instances: 1
+    timeout: 180
+    stack: windows2022
+    buildpacks:
+      - hwc_buildpack
+    host: hello-hwc
+    env:
+      COMPlus_gcServer: "0"
